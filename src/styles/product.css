@@ -1,0 +1,43 @@
+.product {
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.name {
+    font-size: 2em;
+}
+
+.description {
+    font-size: small;
+}
+
+.rating {
+    color: goldenrod;
+}
+
+.productDetails {
+    border-bottom: 1px solid gray;
+}
+
+.commentBox {
+    border-bottom: 1px solid #eeeeee;
+    padding: 10px;
+}
+
+.commentBox:hover {
+    background-color: #eeeeee;
+}
+.commentedBy {
+    font-weight: bold;
+}
+
+.date {
+    color: gray;
+    font-size: smaller;
+}
+
+.commentRating {
+    color: gray;
+    font-size: smaller;
+}

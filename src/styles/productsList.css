@@ -1,0 +1,18 @@
+
+
+.productItem {
+    box-shadow: 0px 2px 1px gray;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;;
+}
+
+.productItem:hover {
+    background-color: #eeeeee;
+    cursor: pointer;
+}
+
+.productItem:active {
+    background-color: #999999;
+}
+
