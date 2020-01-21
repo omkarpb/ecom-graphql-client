@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { useQuery } from '@apollo/react-hooks';
 import gql from 'graphql-tag'
 import { useHistory } from "react-router-dom";
@@ -6,7 +6,7 @@ import { useHistory } from "react-router-dom";
 import '../styles/productsList.css';
 
 const PRODUCT_LIST_QUERY = gql`
-  {
+  query GetAllProducts {
     products {
       id
       name
@@ -20,9 +20,9 @@ function ProductsList() {
   const { loading, error, data } = useQuery(PRODUCT_LIST_QUERY);
 
   const history = useHistory();
-
+  
   if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error :(</p>;
+if (error) return <p>Error :(</p>;
 
   return (
 
